@@ -1,13 +1,14 @@
-class Name{
-    fname : any ;
-    lname : any ;
-    constructor(fname : any, lanme : any){
-        this.fname = fname ;
-        this.lname = lanme ;
+"use strict"
+var Name = /** @class */ (function () {
+    function Name(fname, lname){
+        this.fname = fname;
+        this.lname = lname;
 
     }
-    getName(): any{
-        var fullname : any = this.fname + this.lname ;
-    }
-}
-var auther_name : Name ;
+    Name.prototype.getName = function () {
+        var fullname = this.fname + this.lname;
+
+    };
+    return Name;
+}());
+var auther_name;
