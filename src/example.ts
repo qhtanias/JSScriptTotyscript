@@ -1,5 +1,3 @@
-function log(_target: object, _propertyKey: string, _descriptor: PropertyDescriptor): void {}
-
 class item{
     itemArr : Array<string>;
     constructor(){

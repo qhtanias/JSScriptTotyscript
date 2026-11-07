@@ -19,6 +19,7 @@ greet(): void {
 let dev1 = new Mean_Dev(101, "Alice", 85);
 dev1.stuName = "Alice";
 let dev2 = new Mean_Dev(102, "Bob", 92);
+dev2.stuName = "Bob";
 dev1.display(); dev1.greet();
 dev2.display(); dev2.greet();
 

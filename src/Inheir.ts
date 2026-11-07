@@ -20,4 +20,12 @@ class phase1 extends Mean {
     phase1(): void {
         console.log("Phase 1 assignments: " + this.assignments);
     }
+    disp(): void {
+    super;
+    console.log("Welcome to the course with ID: "
+
+    }
 }
+let obj1 = new phase1("Assignment 1, Assignment 2", 101, 1, "Online");
+obj1.disp();
+obj1.phase1();
