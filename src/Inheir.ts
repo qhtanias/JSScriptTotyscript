@@ -6,9 +6,8 @@ class Mean {
         this.Courseid = id; this.phase = p; this.type = type;
     }
     disp(): void {
-        console.log("Welcome to the course with ID: " 
-            + this.Courseid + " in phase: " + this.phase + " 
-of type: " + this.type);
+        console.log("Welcome to the course with ID: "
+            + this.Courseid + " in phase: " + this.phase + " of type: " + this.type);
     }
 }
 class phase1 extends Mean {
@@ -21,9 +20,15 @@ class phase1 extends Mean {
         console.log("Phase 1 assignments: " + this.assignments);
     }
     disp(): void {
-    super;
-    console.log("Welcome to the course with ID: "
-
+    
+        super.disp();
+    }
+}
+class phase2 extends Mean {
+    assignment: string;
+    constructor(proj : string, id: number, p: number, type: string){
+        super(id, p, type);
+        this.assignment = proj;
     }
 }
 let obj1 = new phase1("Assignment 1, Assignment 2", 101, 1, "Online");
