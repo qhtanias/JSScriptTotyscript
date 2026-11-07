@@ -30,7 +30,14 @@ class phase2 extends Mean {
         super(id, p, type);
         this.assignment = proj;
     }
+    phase1():void {
+        console.log("Phase 2 project: " + this.assignment);
 }
-let obj1 = new phase1("Assignment 1, Assignment 2", 101, 1, "Online");
-obj1.disp();
-obj1.phase1();
+disp(): void {
+    super;
+    console.log("Welcome to the course with ID: "
+        + this.Courseid + " in phase: " + this.phase + " of type: " + this.type);
+let obj2 = new phase2("Project 1", 102, 2, "In-person");
+obj2.disp();
+obj2.phase1();
+    }}
